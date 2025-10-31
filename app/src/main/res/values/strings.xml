@@ -2,5 +2,8 @@
     <string name="app_name">AA2_Ahorcado</string>
     <string name="tap_to_continue">Tap To Continue</string>
     <string name="app_title">Hang Man</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="exit">Exit</string>
 
 </resources>

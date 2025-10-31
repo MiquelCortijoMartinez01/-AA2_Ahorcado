@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AA2_Ahorcado</string>
+    <string name="tap_to_continue">Toca para continuar</string>
+    <string name="app_title">Ahorcado</string>
+    <string name="dark_mode">Modo oscuro</string>
+    <string name="light_mode">Modo claro</string>
+    <string name="exit">Salir</string>
+</resources>

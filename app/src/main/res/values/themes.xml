@@ -2,8 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.AA2_Ahorcado" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryVariant</item>
+        <item name="colorAccent">@color/colorAccent</item>
 
-    <style name="Theme.AA2_Ahorcado" parent="Base.Theme.AA2_Ahorcado" />
+    </style>
+    <style name="Theme.AA2_Ahorcado" parent="Base.Theme.AA2_Ahorcado"/>
 </resources>
