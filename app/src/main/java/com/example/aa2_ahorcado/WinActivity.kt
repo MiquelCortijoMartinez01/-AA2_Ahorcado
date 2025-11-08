@@ -8,16 +8,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class SplashScreenActivity : AppCompatActivity() {
+class WinActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash_screen)
+        setContentView(R.layout.activity_win)
 
-        val splashLayout: View = findViewById(R.id.splash_screen_layout)
+        val splashLayout: View = findViewById(R.id.win_layout)
 
-        // Listener: detecta cualquier toque en la pantalla
+
         splashLayout.setOnClickListener {
-            val intent = Intent(this, GameplayActivity::class.java)
+            val intent:Intent = Intent(this, SplashScreenActivity::class.java)
             startActivity(intent)
             finish()
         }

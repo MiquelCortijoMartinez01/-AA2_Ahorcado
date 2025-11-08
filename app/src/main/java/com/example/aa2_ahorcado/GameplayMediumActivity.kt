@@ -8,12 +8,12 @@ import android.widget.ImageView
 import android.widget.EditText
 import android.widget.TextView
 
-class GameplayEasyActivity : AppCompatActivity() {
+class GameplayMediumActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gameplay_easy)
+        setContentView(R.layout.activity_gameplay_medium)
 
-        val gameplayLayout:View = findViewById(R.id.gameplay_easy_layout)
+        val gameplayLayout:View = findViewById(R.id.gameplay_medium_layout)
 
         val charInput:EditText = findViewById<EditText>(R.id.charInput)
         val userChar:String = charInput.text.toString()
@@ -38,7 +38,9 @@ class GameplayEasyActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.textView4),
             findViewById<TextView>(R.id.textView5),
             findViewById<TextView>(R.id.textView6),
-            findViewById<TextView>(R.id.textView7)
+            findViewById<TextView>(R.id.textView7),
+            findViewById<TextView>(R.id.textView8),
+            findViewById<TextView>(R.id.textView9)
         )
 
         val button:View = findViewById<View>(R.id.button)

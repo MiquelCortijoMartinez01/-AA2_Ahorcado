@@ -2,13 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/gameplay_layout"
+    android:id="@+id/gameplay_easy_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_splash_screen"
     android:orientation="vertical"
     app:barrierMargin="@dimen/material_emphasis_disabled"
-    tools:context=".GameplayActivity">
+    tools:context=".GameplayEasyActivity">
 
     <TextView
         android:id="@+id/Titulo"

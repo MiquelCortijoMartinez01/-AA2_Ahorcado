@@ -3,22 +3,17 @@ package com.example.aa2_ahorcado
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import android.widget.ImageView
 import android.widget.EditText
 import android.widget.TextView
-import org.w3c.dom.Text
 
-class GameplayActivity : AppCompatActivity() {
+class GameplayEasyActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gameplay)
+        setContentView(R.layout.activity_gameplay_easy)
 
-        val gameplayLayout:View = findViewById(R.id.gameplay_layout)
+        val gameplayLayout:View = findViewById(R.id.gameplay_easy_layout)
 
         val charInput:EditText = findViewById<EditText>(R.id.charInput)
         val userChar:String = charInput.text.toString()

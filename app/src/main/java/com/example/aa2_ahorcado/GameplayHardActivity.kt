@@ -8,12 +8,12 @@ import android.widget.ImageView
 import android.widget.EditText
 import android.widget.TextView
 
-class GameplayMediumActivity : AppCompatActivity() {
+class GameplayHardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gameplay_medium)
+        setContentView(R.layout.activity_gameplay_hard)
 
-        val gameplayLayout:View = findViewById(R.id.gameplay_medium_layout)
+        val gameplayLayout:View = findViewById(R.id.gameplay_hard_layout)
 
         val charInput:EditText = findViewById<EditText>(R.id.charInput)
         val userChar:String = charInput.text.toString()
@@ -40,7 +40,29 @@ class GameplayMediumActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.textView6),
             findViewById<TextView>(R.id.textView7),
             findViewById<TextView>(R.id.textView8),
-            findViewById<TextView>(R.id.textView9)
+            findViewById<TextView>(R.id.textView9),
+            findViewById<TextView>(R.id.textView10),
+            findViewById<TextView>(R.id.textView11),
+            findViewById<TextView>(R.id.textView12),
+            findViewById<TextView>(R.id.textView13),
+            findViewById<TextView>(R.id.textView14),
+            findViewById<TextView>(R.id.textView15),
+            findViewById<TextView>(R.id.textView16),
+            findViewById<TextView>(R.id.textView17),
+            findViewById<TextView>(R.id.textView18),
+            findViewById<TextView>(R.id.textView19),
+            findViewById<TextView>(R.id.textView20),
+            findViewById<TextView>(R.id.textView21),
+            findViewById<TextView>(R.id.textView22),
+            findViewById<TextView>(R.id.textView23),
+            findViewById<TextView>(R.id.textView24),
+            findViewById<TextView>(R.id.textView25),
+            findViewById<TextView>(R.id.textView26),
+            findViewById<TextView>(R.id.textView27),
+            findViewById<TextView>(R.id.textView28),
+            findViewById<TextView>(R.id.textView29),
+            findViewById<TextView>(R.id.textView44),
+            findViewById<TextView>(R.id.textView45)
         )
 
         val button:View = findViewById<View>(R.id.button)
