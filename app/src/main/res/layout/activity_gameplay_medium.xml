@@ -2,36 +2,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/gameplay_layout"
+    android:id="@+id/gameplay_easy_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_splash_screen"
     android:orientation="vertical"
     app:barrierMargin="@dimen/material_emphasis_disabled"
-    tools:context=".GameplayActivity">
+    tools:context=".GameplayEasyActivity">
 
     <TextView
         android:id="@+id/Titulo"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="270dp"
         android:layout_gravity="center"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="@string/app_title"
+        android:text="Don't get hanged"
         android:textColor="@color/colorPrimaryVariant"
-        android:textSize="90sp"
+        android:textSize="50sp"
         android:textStyle="bold" />
     <FrameLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="250dp">
 
-        <ImageView
-            android:id="@+id/LogoEmpty"
-            android:layout_width="match_parent"
-            android:layout_height="184dp"
-            android:layout_weight="1"
-            android:visibility="visible"
-            app:srcCompat="@drawable/logo_empty" />
+
 
         <ImageView
             android:id="@+id/logo1"
@@ -40,6 +34,13 @@
             android:layout_weight="1"
             android:visibility="invisible"
             app:srcCompat="@drawable/logo1" />
+        <ImageView
+            android:id="@+id/LogoEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/logo_empty" />
 
         <ImageView
             android:id="@+id/logo2"
@@ -148,62 +149,125 @@
     android:weightSum="1"
     app:barrierMargin="@dimen/material_emphasis_disabled"
     tools:context=".GameplayActivity">
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:maxLength="1"
-            android:text="R" />
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:maxLength="1"
-            android:text="A" />
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:maxLength="1"
-            android:text="P" />
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:maxLength="1"
-            android:text="T" />
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:maxLength="1"
-            android:text="O" />
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:maxLength="1"
-            android:text="R" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:maxLength="1"
+                android:text="E"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:text="_"
+                android:textSize="30sp"
+                android:visibility="visible"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:maxLength="1"
+                android:text="N"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:text="_"
+                android:textSize="30sp"
+                android:visibility="visible"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:maxLength="1"
+                android:text="T"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:text="_"
+                android:textSize="30sp"
+                android:visibility="visible"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:maxLength="1"
+                android:text="I"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:text="_"
+                android:textSize="30sp"
+                android:visibility="visible"/>
+        </FrameLayout>
+
 
     </LinearLayout>
-
-    <EditText
-        android:id="@+id/charInput"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_splash_screen"
+        android:orientation="horizontal"
         android:gravity="center"
-        android:hint="type"
-        android:inputType="text"
-        android:maxLength="1"
-        android:text="a"
-        android:textSize="24sp"
-        tools:text="a" />
+        android:layout_gravity="center"
+        android:weightSum="1"
+        app:barrierMargin="@dimen/material_emphasis_disabled"
+        tools:context=".GameplayActivity">
+        <EditText
+            android:id="@+id/charInput"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:hint="type"
+            android:inputType="text"
+            android:maxLength="1"
+            android:textSize="24sp"
+            tools:text="a" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Test"
+            android:textSize="20dp" />
+    </LinearLayout>
+
 
 
 </LinearLayout>
