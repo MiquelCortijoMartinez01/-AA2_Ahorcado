@@ -6,4 +6,10 @@
     <string name="dark_mode">Modo oscuro</string>
     <string name="light_mode">Modo claro</string>
     <string name="exit">Salir</string>
+    <string name="select_difficulty">Selecciona la dificultad:</string>
+    <string name="letters_4">Letras: 4</string>
+    <string name="letters_6">Letras: 6</string>
+    <string name="letters_22">Letras: 22</string>
+    <string name="you_lose">Has perdido :(</string>
+    <string name="you_win">Has ganado!</string>
 </resources>

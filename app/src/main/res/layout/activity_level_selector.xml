@@ -12,19 +12,17 @@
     tools:context=".LevelSelectorActivity">
 
 
-
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_marginHorizontal="50dp"
-        android:text="Select difficulty:"
-        android:textColor="#ffffff"
-        android:textSize="40sp"
+        android:layout_marginTop="130dp"
+        android:text="@string/select_difficulty"
+        android:textColor="@color/white"
+        android:textSize="70sp"
         android:textStyle="bold" />
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
@@ -38,26 +36,32 @@
         android:layout_marginTop="40dp"
         android:paddingStart="35dp"
         android:paddingEnd="35dp">
+
         <Button
             android:id="@+id/button3"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:text="4 Letras"
-            android:backgroundTint="@color/black"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/colorPrimaryVariant"
+            android:text="@string/letters_4"
             android:textColor="@android:color/white"
-            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            app:srcCompat="@drawable/adult_baby"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="10dp" />
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/adult_baby" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -66,26 +70,31 @@
         android:layout_marginTop="40dp"
         android:paddingStart="35dp"
         android:paddingEnd="35dp">
+
         <Button
             android:id="@+id/button4"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:text="6 Letras"
-            android:backgroundTint="@color/black"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/colorPrimaryVariant"
+            android:text="@string/letters_6"
             android:textColor="@android:color/white"
-            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            app:srcCompat="@drawable/serious_face"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="10dp" />
+            app:srcCompat="@drawable/serious_face" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -94,26 +103,231 @@
         android:layout_marginTop="40dp"
         android:paddingStart="35dp"
         android:paddingEnd="35dp">
+
         <Button
             android:id="@+id/button5"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:text="22 Letras"
-            android:backgroundTint="@color/black"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/colorPrimaryVariant"
+            android:text="@string/letters_22"
             android:textColor="@android:color/white"
-            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            app:srcCompat="@drawable/evil_troll"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/evil_troll" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp">
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/colorPrimaryVariant"
+                android:text="@string/letters_4"
+                android:textColor="@android:color/white"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/adult_baby" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_percent="0.20"
+        android:layout_marginTop="40dp"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/colorPrimaryVariant"
+            android:text="@string/letters_6"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="10dp" />
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/serious_face" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_percent="0.20"
+        android:layout_marginTop="40dp"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp">
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/colorPrimaryVariant"
+            android:text="@string/letters_22"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/evil_troll" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp">
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/colorPrimaryVariant"
+                android:text="@string/letters_4"
+                android:textColor="@android:color/white"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/adult_baby" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_percent="0.20"
+        android:layout_marginTop="40dp"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp">
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/colorPrimaryVariant"
+            android:text="@string/letters_6"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/serious_face" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_percent="0.20"
+        android:layout_marginTop="40dp"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp">
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/colorPrimaryVariant"
+            android:text="@string/letters_22"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/evil_troll" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
     </ScrollView>
