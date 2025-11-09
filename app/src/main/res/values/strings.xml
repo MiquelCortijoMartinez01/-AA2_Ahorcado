@@ -6,9 +6,9 @@
     <string name="light_mode">Light Mode</string>
     <string name="exit">Exit</string>
     <string name="select_difficulty">Select Difficulty:</string>
-    <string name="letters_4">Letters: 4</string>
-    <string name="letters_6">Letters: 6</string>
-    <string name="letters_22">Letters: 22</string>
+    <string name="letters_4">Letters: 4.    Word: ENTI</string>
+    <string name="letters_6">Letters: 6.    Word: TOMATE</string>
+    <string name="letters_22">Letters: 22.  Word: ESTERNOCLEIDOMASTOIDEO</string>
     <string name="you_lost">You lost :(</string>
     <string name="you_win">You win!</string>
     <string name="dont_get_hanged">Dont get hanged</string>

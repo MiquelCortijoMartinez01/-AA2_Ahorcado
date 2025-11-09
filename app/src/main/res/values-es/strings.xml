@@ -7,9 +7,9 @@
     <string name="light_mode">Modo claro</string>
     <string name="exit">Salir</string>
     <string name="select_difficulty">Selecciona la dificultad:</string>
-    <string name="letters_4">Letras: 4</string>
-    <string name="letters_6">Letras: 6</string>
-    <string name="letters_22">Letras: 22</string>
+    <string name="letters_4">Letras: 4.    Palabra: ENTI</string>
+    <string name="letters_6">Letras: 6.    Palabra: TOMATE</string>
+    <string name="letters_22">Letras: 22.  Palabra: ESTERNOCLEIDOMASTOIDEO</string>
     <string name="you_lost">Has perdido :(</string>
     <string name="you_win">¡Has ganado!</string>
     <string name="dont_get_hanged">No te quedes colgado</string>
