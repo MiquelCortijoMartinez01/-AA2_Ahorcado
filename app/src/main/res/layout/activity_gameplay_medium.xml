@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_splash_screen">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameplay_medium_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:barrierMargin="@dimen/material_emphasis_disabled"
+    tools:context=".GameplayMediumActivity">
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_marginTop="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Don't get hanged"
+        android:textColor="@color/colorPrimaryVariant"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="250dp">
+
+
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo1" />
+        <ImageView
+            android:id="@+id/LogoEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/logo_empty" />
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo2" />
+
+        <ImageView
+            android:id="@+id/logo3"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo3" />
+
+        <ImageView
+            android:id="@+id/logo4"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo4" />
+
+        <ImageView
+            android:id="@+id/logo5"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo5" />
+
+        <ImageView
+            android:id="@+id/logo6"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo6" />
+
+        <ImageView
+            android:id="@+id/logo7"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo7" />
+
+        <ImageView
+            android:id="@+id/logo8"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo8" />
+
+        <ImageView
+            android:id="@+id/logo9"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo9" />
+
+        <ImageView
+            android:id="@+id/logo10"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo10" />
+
+        <ImageView
+            android:id="@+id/logo11"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo11" />
+
+        <ImageView
+            android:id="@+id/logo12"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo12" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/img_logo" />
+
+
+    </FrameLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/bg_splash_screen"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:weightSum="1"
+    app:barrierMargin="@dimen/material_emphasis_disabled"
+    tools:context=".GameplayActivity">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:maxLength="1"
+                android:text="T"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:text="_"
+                android:textSize="30sp"
+                android:visibility="visible"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:maxLength="1"
+                android:text="O"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:text="_"
+                android:textSize="30sp"
+                android:visibility="visible"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:maxLength="1"
+                android:text="M"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:text="_"
+                android:textSize="30sp"
+                android:visibility="visible"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:maxLength="1"
+                android:text="A"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:text="_"
+                android:textSize="30sp"
+                android:visibility="visible"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:maxLength="1"
+                android:text="T"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:text="_"
+                android:textSize="30sp"
+                android:visibility="visible"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:maxLength="1"
+                android:text="E"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:text="_"
+                android:textSize="30sp"
+                android:visibility="visible"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_splash_screen"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:weightSum="1"
+        app:barrierMargin="@dimen/material_emphasis_disabled"
+        tools:context=".GameplayActivity">
+        <EditText
+            android:id="@+id/charInput"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:hint="type"
+            android:inputType="text"
+            android:maxLength="1"
+            android:textSize="24sp"
+            tools:text="a" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Test"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+    </FrameLayout>
+</ScrollView>
