@@ -13,11 +13,6 @@ class GameplayEasyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gameplay_easy)
 
-        val gameplayLayout:View = findViewById(R.id.gameplay_easy_layout)
-
-        val charInput:EditText = findViewById<EditText>(R.id.charInput)
-        val userChar:String = charInput.text.toString()
-
         val images:List<ImageView> = listOf(
             findViewById<ImageView>(R.id.logo1),
             findViewById<ImageView>(R.id.logo2),
@@ -79,7 +74,7 @@ class GameplayEasyActivity : AppCompatActivity() {
         }
     }
     private fun checkWin(letters: List<TextView>) {
-        val allRevealed:Boolean = letters.all { it.visibility == View.VISIBLE }
+        val allRevealed:Boolean = letters.all { it.visibility == View.VISIBLE }//linea hecha por chatgpt
 
         if (allRevealed) {
             val intent:Intent = Intent(this, WinActivity::class.java)

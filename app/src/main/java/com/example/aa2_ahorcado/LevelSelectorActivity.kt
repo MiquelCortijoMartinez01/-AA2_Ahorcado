@@ -19,17 +19,17 @@ class LevelSelectorActivity : AppCompatActivity() {
         val buttonHard:View = findViewById<View>(R.id.button5)
 
         buttonEasy.setOnClickListener {
-            val intent = Intent(this, GameplayEasyActivity::class.java)
+            val intent:Intent = Intent(this, GameplayEasyActivity::class.java)
             startActivity(intent)
             finish()
         }
         buttonMedium.setOnClickListener {
-            val intent = Intent(this, GameplayMediumActivity::class.java)
+            val intent:Intent = Intent(this, GameplayMediumActivity::class.java)
             startActivity(intent)
             finish()
         }
         buttonHard.setOnClickListener {
-            val intent = Intent(this, GameplayHardActivity::class.java)
+            val intent:Intent = Intent(this, GameplayHardActivity::class.java)
             startActivity(intent)
             finish()
         }

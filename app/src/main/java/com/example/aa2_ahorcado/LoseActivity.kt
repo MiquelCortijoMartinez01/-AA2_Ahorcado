@@ -17,7 +17,7 @@ class LoseActivity : AppCompatActivity() {
 
         // Listener: detecta cualquier toque en la pantalla
         splashLayout.setOnClickListener {
-            val intent:Intent = Intent(this, SplashScreenActivity::class.java)
+            val intent:Intent = Intent(this, LevelSelectorActivity::class.java)
             startActivity(intent)
             finish()
         }

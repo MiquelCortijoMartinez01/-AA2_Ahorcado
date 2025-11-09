@@ -17,7 +17,7 @@ class WinActivity : AppCompatActivity() {
 
 
         splashLayout.setOnClickListener {
-            val intent:Intent = Intent(this, SplashScreenActivity::class.java)
+            val intent:Intent = Intent(this, LevelSelectorActivity::class.java)
             startActivity(intent)
             finish()
         }

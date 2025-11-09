@@ -13,11 +13,6 @@ class GameplayMediumActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gameplay_medium)
 
-        val gameplayLayout:View = findViewById(R.id.gameplay_medium_layout)
-
-        val charInput:EditText = findViewById<EditText>(R.id.charInput)
-        val userChar:String = charInput.text.toString()
-
         val images:List<ImageView> = listOf(
             findViewById<ImageView>(R.id.logo1),
             findViewById<ImageView>(R.id.logo2),
@@ -71,8 +66,8 @@ class GameplayMediumActivity : AppCompatActivity() {
             charInput.text.clear()
         }
     }
-    private fun showNext(images: List<ImageView>) {//linea proporcionada por chatGpt
-        val index:Int = images.indexOfLast { it.visibility == View.VISIBLE }//linea proporcionada por chatGpt
+    private fun showNext(images: List<ImageView>) {
+        val index:Int = images.indexOfLast { it.visibility == View.VISIBLE }
         val next:Int = (index + 1) % images.size
         images[next].visibility = View.VISIBLE
         if (next >= images.size - 1) {
