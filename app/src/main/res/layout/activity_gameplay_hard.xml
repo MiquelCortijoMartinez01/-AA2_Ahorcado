@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_splash_screen">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/gameplay_hard_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_splash_screen"
     android:orientation="vertical"
     app:barrierMargin="@dimen/material_emphasis_disabled"
     tools:context=".GameplayHardActivity">
 
     <TextView
         android:id="@+id/Titulo"
+        android:layout_marginTop="28dp"
         android:layout_width="wrap_content"
-        android:layout_height="270dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="1"
         android:gravity="center"
@@ -670,3 +678,5 @@
 
 
 </LinearLayout>
+    </FrameLayout>
+</ScrollView>

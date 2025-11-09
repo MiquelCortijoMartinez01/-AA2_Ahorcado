@@ -13,9 +13,6 @@
         android:theme="@style/Base.Theme.AA2_Ahorcado"
         tools:targetApi="31">
         <activity
-            android:name=".LevelSelectorActivity"
-            android:exported="false" />
-        <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
@@ -24,6 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LevelSelectorActivity"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
