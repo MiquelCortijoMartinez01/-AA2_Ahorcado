@@ -22,25 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LevelSelectorActivity"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
-            android:exported="true" />
-        <activity
-            android:name=".GameplayEasyActivity"
-            android:exported="true" />
-        <activity
-            android:name=".GameplayMediumActivity"
-            android:exported="true" />
-        <activity
-            android:name=".GameplayHardActivity"
-            android:exported="true" />
-        <activity
-            android:name=".WinActivity"
-            android:exported="true" />
-        <activity
-            android:name=".LoseActivity"
             android:exported="true" />
     </application>
 

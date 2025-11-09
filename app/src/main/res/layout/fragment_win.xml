@@ -5,17 +5,17 @@
     android:id="@+id/win_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_splash_screen"
+    android:background="@color/colorPrimary"
     android:orientation="vertical"
     android:gravity="center"
     app:barrierMargin="@dimen/material_emphasis_disabled"
-    tools:context=".WinActivity">
+    tools:context=".WinFragment">
 
     <TextView
-        android:text="YOU WON!"
-        android:textSize="40sp"
+        android:text="@string/you_win"
+        android:textSize="100sp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
+        android:textColor="@color/colorPrimaryVariant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </LinearLayout>

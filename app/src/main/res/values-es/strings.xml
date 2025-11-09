@@ -10,6 +10,8 @@
     <string name="letters_4">Letras: 4</string>
     <string name="letters_6">Letras: 6</string>
     <string name="letters_22">Letras: 22</string>
-    <string name="you_lose">Has perdido :(</string>
-    <string name="you_win">Has ganado!</string>
+    <string name="you_lost">Has perdido :(</string>
+    <string name="you_win">¡Has ganado!</string>
+    <string name="dont_get_hanged">No te quedes colgado</string>
+
 </resources>

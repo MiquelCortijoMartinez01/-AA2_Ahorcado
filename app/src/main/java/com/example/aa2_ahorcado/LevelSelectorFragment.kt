@@ -21,18 +21,34 @@ class LevelSelectorFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val buttonEasy:View = view.findViewById<View>(R.id.button3)
-        val buttonMedium:View = view.findViewById<View>(R.id.button4)
-        val buttonHard:View = view.findViewById<View>(R.id.button5)
+        val buttons = listOf(
+            R.id.button3,
+            R.id.button4,
+            R.id.button5,
+            R.id.button6,
+            R.id.button7,
+            R.id.button8,
+            R.id.button9,
+            R.id.button10,
+            R.id.button11,
+        )
 
-        buttonEasy.setOnClickListener {
-            //requireActivity().supportFragmentManager.beginTransaction().replace(R.id.frame, GameplayEasyFragment()).commit()
-        }
-        buttonMedium.setOnClickListener {
-            //requireActivity().supportFragmentManager.beginTransaction().replace(R.id.frame, GameplayMediumFragment()).commit()
-        }
-        buttonHard.setOnClickListener {
-            //requireActivity().supportFragmentManager.beginTransaction().replace(R.id.frame, GameplayHardFragment()).commit()
+        val fragments = listOf(
+            GameplayEasyFragment(),
+            GameplayMediumFragment(),
+            GameplayHardFragment(),
+            GameplayEasyFragment(),
+            GameplayMediumFragment(),
+            GameplayHardFragment(),
+            GameplayEasyFragment(),
+            GameplayMediumFragment(),
+            GameplayHardFragment(),
+        )
+
+        buttons.forEachIndexed { index, id -> val button = view.findViewById<View>(id)
+            button.setOnClickListener {
+                requireActivity().supportFragmentManager.beginTransaction().replace(R.id.frame, fragments[index]).commit()
+            }
         }
     }
 }

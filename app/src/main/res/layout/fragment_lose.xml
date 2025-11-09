@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/lose_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorPrimary"
+android:orientation="vertical"
+android:gravity="center"
+app:barrierMargin="@dimen/material_emphasis_disabled"
+tools:context=".LoseFragment">
+
+<TextView
+    android:text="@string/you_lost"
+    android:textSize="100sp"
+    android:textStyle="bold"
+    android:textColor="@color/colorPrimaryVariant"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</LinearLayout>

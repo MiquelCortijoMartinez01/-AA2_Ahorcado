@@ -19,7 +19,9 @@ class MainActivity : AppCompatActivity() {
         myToolbar = findViewById(R.id.toolbar)
         setSupportActionBar(myToolbar)
 
-        loadFragment(LevelSelectorFragment())
+        if(supportFragmentManager.findFragmentById(R.id.frame) == null){
+            loadFragment(LevelSelectorFragment())
+        }
     }
 
     private fun loadFragment(fragment: Fragment){
@@ -32,21 +34,22 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return if(item.itemId == R.id.dark_mode) {
+        return when(item.itemId) {
             // Codigo
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            delegate.applyDayNight()
-            true
-        } else if (item.itemId == R.id.light_mode) {
-            // Codigo
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            delegate.applyDayNight()
-            true
-        } else if (item.itemId == R.id.exit) {
-            finish()
-            true
-        }else {
-            super.onOptionsItemSelected(item)
+            R.id.dark_mode -> {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                delegate.applyDayNight()
+                true
+            }
+            R.id.light_mode -> {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                delegate.applyDayNight()
+                true
+            }
+            R.id.exit -> {
+                finish()
+                true
+            } else -> super.onOptionsItemSelected(item)
         }
     }
 }
